@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Kolhe - Amazon Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="amazon-logo"><img src="amazon-logo.png" alt="Amazon logo"></div>
+        <div class="search-bar"><input type="text" placeholder="top talent"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" onclick="showPopup('about-popup')">About</a>
+            <a href="#" onclick="showPopup('skills-popup')">Skills</a>
+            <a href="https://github.com/atharvakolhe04" target="_blank">Projects</a>
+            <a href="#" onclick="showPopup('contact-popup')">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <div class="image">
+                <img src="atharva.jpeg" alt="Atharva Kolhe">
+                <img src="My_PDF.png" alt="Scan to view CV" class="qr-code">
+            </div>
+            <div class="details">
+                <h1>Atharva Kolhe - The Tech & Finance Innovator</h1>
+                <p class="price">₹0.00 <span class="free"> (Limited Time Offer: Free for Recruiters) </span></p>
+                <p><strong>Category:</strong> Multi-Talented Tech & Finance Enthusiast</p>
+                <p><strong>Stock:</strong> Available for Internships & Job Offers ✅</p>
+                <p><strong>Estimated Delivery:</strong> Immediate Hire Possible 📦</p>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>🎓 Pursuing MBA Tech (Computer Engineering) at NMIMS</li>
+                    <li>💻 Skilled in Python, Java, C++, Web Development</li>
+                    <li>📊 Interested in Investment Banking, Financial Modeling</li>
+                    <li>⚡ Passionate about Problem-Solving & Innovation</li>
+                </ul>
+
+                <button id="add-to-cart">🛒 Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-description">
+            <h2>Product Description</h2>
+            <p>Atharva Kolhe is a highly skilled Computer Engineering & Finance enthusiast currently pursuing an MBA Tech at NMIMS. With a strong technical foundation in software development and a keen interest in investment banking, he is ready to bring innovation to tech-driven finance roles.</p>
+            
+            <h3>Technical Specifications</h3>
+            <table>
+                <tr>
+                    <td><strong>Programming Languages</strong></td>
+                    <td>Python, Java, C++, SQL, JavaScript</td>
+                </tr>
+                <tr>
+                    <td><strong>Frameworks & Tools</strong></td>
+                    <td>React, Node.js, Django, MySQL, Firebase</td>
+                </tr>
+                <tr>
+                    <td><strong>Soft Skills</strong></td>
+                    <td>Communication, Leadership, Critical Thinking</td>
+                </tr>
+                <tr>
+                    <td><strong>Certifications</strong></td>
+                    <td>Machine Learning, Financial Analysis</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="ratings">
+            <h2>Customer Ratings</h2>
+            <p>⭐⭐⭐⭐⭐ Technical Skills (5.0)</p>
+            <p>⭐⭐⭐⭐☆ Problem Solving (4)</p>
+            <p>⭐⭐⭐⭐☆ Communication (4)</p>
+            <p>⭐⭐⭐⭐⭐ Financial Knowledge (5.0)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Atharva Kolhe | Connect with me: 
+            <a href="https://linkedin.com/in/atharva-kolhe-99365930a">LinkedIn</a>
+        </p>
+    </footer>
+
+    <div id="cart-popup" class="popup">
+        <p>✅ Atharva Kolhe has been added to your hiring cart!</p>
+        <p>📩 Contact via <a href="https://linkedin.com/in/atharva-kolhe-99365930a" target="_blank">LinkedIn</a></p>
+        <button onclick="closePopup('cart-popup')">Close</button>
+    </div>
+
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <h2>About Me</h2>
+            <p>I'm Atharva Kolhe, a Computer Engineering student pursuing an MBA Tech at NMIMS. Passionate about software development and finance, I aim to bridge the gap between technology and investment banking.</p>
+            <button onclick="closePopup('about-popup')">Close</button>
+        </div>
+    </div>
+
+    <div id="skills-popup" class="popup">
+        <div class="popup-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, Java, C++, SQL, JavaScript</li>
+                <li>Frameworks: React, Node.js, Django, MySQL</li>
+                <li>Finance: Investment Banking, Financial Modeling</li>
+                <li>Soft Skills: Leadership, Critical Thinking, Communication</li>
+            </ul>
+            <button onclick="closePopup('skills-popup')">Close</button>
+        </div>
+    </div>
+
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <h2>Contact Me</h2>
+            <p>Email: atharvakolhe04@gmail.com</p>
+            <p>Phone: +91 8369608443</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/atharva-kolhe-99365930a" target="_blank">linkedin.com/in/atharva-kolhe</a></p>
+            <button onclick="closePopup('contact-popup')">Close</button>
+        </div>
+    </div>
+</body>
+</html>
